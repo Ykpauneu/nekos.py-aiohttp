@@ -1,4 +1,4 @@
-# nekosrewrite
+# nekos.py-aiohttp
 Python module that uses Nekos API via aiohttp
 # How to install:
 ```py
