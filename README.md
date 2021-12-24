@@ -7,21 +7,21 @@ Python module that uses Nekos API via aiohttp
 
 # NSFW example:
 ```py
-from your_location import nekosrewrite
+import nekosrewrite
 async def main():
     result = await nekosrewrite.main("feet")
     print(result)
 ```
 # NSFW example with args
 ```py
-from your_location import nekosrewrite
+import nekosrewrite
 async def main(arg1):
     result = await nekosrewrite.main(arg1)
     print(result)
 ```
 # If you need to get list of possible NSFW args, use:
 ```py
-from your_location import nekosrewrite
+import nekosrewrite
 async def main():
     await nekosrewrite.possible_args()
 >>> returns list
