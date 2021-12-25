@@ -2,7 +2,7 @@
 Python module that uses Nekos API via aiohttp
 # How to install:
 ```py
-pip install nekosrewrite==1.0.1
+pip install nekosrewrite
 ```
 # Requirements
 - asyncio
