@@ -4,7 +4,7 @@ Python module that uses Nekos API via aiohttp
 ```py
 pip install nekosrewrite
 ```
-# Requirements
+# Requirements:
 - asyncio
 - aiohttp
 # NSFW example:
@@ -17,7 +17,7 @@ async def main():
 loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
 ```
-# NSFW example with args
+# NSFW example with args:
 ```py
 import nekosrewrite
 async def main(arg1):
