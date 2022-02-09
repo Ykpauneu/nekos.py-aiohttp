@@ -2,36 +2,53 @@
 Python module that uses Nekos API via aiohttp
 # Install:
 ```
-pip install nekosrewrite
+>>> pip install nekosrewrite
 ```
 # Requirements
 - asyncio
 - aiohttp
-# NSFW example:
+
+# Example:
 ```py
-import nekosrewrite
+from nekosrewrite import NekosRewrite
+
+nekos = NekosRewrite()
+
 async def main():
-    result = await nekosrewrite.main("feet")
+    result = await nekos.get_image("feet")
     print(result)
+
 loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
 ```
-# NSFW example with args
+
+# Get arguments
 ```py
-import nekosrewrite
-async def main(arg1):
-    result = await nekosrewrite.main(arg1)
-    print(result)
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main(arg1))
-```
-# If you need to get list of possible NSFW args, use:
-```py
-import nekosrewrite
+from nekosrewrite import NekosRewrite
+
+nekos = NekosRewrite()
+
 async def main():
-    await nekosrewrite.possible_args()
+    result = await nekos.get_arguments()
+    print(result)
+
 loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
 ```
+
+# Get endpoints
+```py
+from nekosrewrite import NekosRewrite
+
+nekos = NekosRewrite()
+
+async def main():
+    result = await nekos.get_endpoints()
+    print(result)
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
+```
+
 I made this library like the original nekos.py uses requests and this can cause problems for asynchronous bots/programs, etc..
 I have been programming not so long ago, if you see any shortcomings or problems, please write me, thanks :)
