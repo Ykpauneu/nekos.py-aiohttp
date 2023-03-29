@@ -4,3 +4,5 @@ README.md
 setup.py
 nekosrewrite\__init__.py
 nekosrewrite\nekosrewrite.py
+nekosrewrite\exceptions.py
+nekosrewrite\consts.py
