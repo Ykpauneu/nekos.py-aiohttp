@@ -2,7 +2,7 @@
 Python module that uses Nekos API via aiohttp
 # Install:
 ```
->>> pip install nekosrewrite
+>>> pip install git+https://github.com/Ykpauneu/nekos.py-aiohttp.git
 ```
 # Requirements
 - aiohttp
